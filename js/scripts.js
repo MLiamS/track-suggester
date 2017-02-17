@@ -12,10 +12,13 @@ $(function(){
     var q6 = parseInt($("#q6").val());
     var q7 = parseInt($("#q7").val());
     respond(q1, q2, q3, q4, q5, q6, q7);
-    var answers= [php,jav,ruby,c]
-
-    console.log(answers);
-
+    var cohort = path(php,jav,ruby,c);
+      $(".name").text(name);
+      $(".path").text(cohort);
+      $(".response").show();
+      console.log(q1, q2, q3, q4, q5, q6, q7)
+      console.log(php,jav,ruby,c);
+    console.log(path(php,jav,ruby,c));
 
 
   });
@@ -25,7 +28,6 @@ var jav = 0;
 var ruby = 0;
 var c = 0;
 
-var answers= [php,jav,ruby,c]
 
 var q1 = parseInt($("#q1").val())
 var q2 = parseInt($("#q2").val())
@@ -34,7 +36,36 @@ var q4 = parseInt($("#q4").val())
 var q5 = parseInt($("#q5").val())
 var q6 = parseInt($("#q6").val())
 var q7 = parseInt($("#q7").val())
-console.log(q1, q2, q3, q4, q5, q6, q7)
+
+
+
+var path = function(php,jav,ruby,c){
+  debugger;
+  if(php > jav && php > ruby && php > c){
+  var returnVal = "PHP";
+  }
+  if (jav > php && jav > ruby && jav > c){
+  var returnVal = "Java";
+  }
+  if (ruby > jav && ruby > php && ruby > c){
+  var returnVal = "Ruby";
+  }
+  if (c > php && c > jav && c > ruby){
+    var returnVal = "C#";
+  }
+return returnVal;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 var respond = function(q1, q2, q3, q4, q5, q6, q7)  {

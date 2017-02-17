@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track Selector</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Track Selector</h1>
+        <p>This page will help you decide which Epicodus track to tack, answer the brief questionnaire and click submit.</p>
+      <form id="formInfo">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="formDiv">
+              <label for="name">Name: </label>
+              <input id="name" type="text" class="form-control">
+                <div class="question">
+                  <h3>Where would you feel most comfortable working?</h3>
+                    <select class="form-control" id="q1">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>For a large company</option>
+                      <option>Enterprise level company</option>
+                      <option>Startup</option>
+                    </select>
+                </div>
+                <div class="question">
+                  <h3>What would you like to build?<h3>
+                    <select class="form-control" id="q2">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>Windows desktop applications</option>
+                      <option>High-performance apps</option>
+                      <option>Content heavy websites</option>
+                      <option>Interactive web applications</option>
+                    </select>
+                </div>
+                <div class="question">
+                  <h3>Are you specifically interested in mobile development, especially android?JAVA<h3>
+                    <select class="form-control" id="q3">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>Yep</option>
+                      <option>Nope</option>
+                    </select>
+                </div>
+                <div class="question">
+                  <h3>What would you like to build?<h4>
+                    <select class="form-control" id="q4">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>Windows desktop applications</option>
+                      <option>High-performance apps</option>
+                      <option>Content heavy websites</option>
+                      <option>Interactive web applications</option>
+                    </select>
+                </div>
+                <div class="question">
+                  <h3>Are you specifically interested in creating webpages to collect form data and generate dynamic page content?PHP<h3>
+                    <select class="form-control" id="q5">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>Yep</option>
+                      <option>Nope</option>
+                    </select>
+                </div>
+                <div class="question">
+                  <h3>Are you specifically interested in in working with the rails framework?Ruby<h3>
+                    <select class="form-control" id="q6">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>Yep</option>
+                      <option>Nope</option>
+                    </select>
+                </div>
+                <div class="question">
+                  <h3>Are you specifically interested in in working with the .Net framework?C#<h3>
+                    <select class="form-control" id="q7">
+                      <option selected disabled value>-- selcet an answer --</option>
+                      <option>Yep</option>
+                      <option>Nope</option>
+                    </select>
+                </div>
+        <div class="button">
+          <button type="submit" class="btn btn-primary" name="button">Submit</button>
+        </div>
+      </form>
+          </div>
+          </div>
+            <div class="col-md-6">
+              <div class="response">
+                <h4>Hey, <span class="name"></span> you might consider enrolling in the <span class="path"></span></h4>
+
+
+              </div>
+            </div>
+            </div>
+      </div>
+
+
+  </body>
+</html>

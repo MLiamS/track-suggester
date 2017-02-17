@@ -2,7 +2,6 @@
 $(function(){
   $("form#formInfo").submit(function(){
     event.preventDefault();
-    ;debugger
     var name = $("#name").val();
     $(".name").text(name);
     var q1 = parseInt($("#q1").val());
@@ -38,10 +37,10 @@ var q6 = parseInt($("#q6").val())
 
 
 function clear(){
-delete global.php;
-delete global.jav;
-delete global.ruby;
-delete global.c;
+php = 0;
+jav = 0;
+ruby = 0;
+c = 0;
 }
 
 var path = function(php,jav,ruby,c){

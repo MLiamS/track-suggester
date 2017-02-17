@@ -2,7 +2,6 @@
 $(function(){
   $("form#formInfo").submit(function(){
     event.preventDefault();
-    ;debugger
     var name = $("#name").val();
     $(".name").text(name);
     var q1 = parseInt($("#q1").val());
@@ -16,11 +15,9 @@ $(function(){
       $(".name").text(name);
       $(".path").text(cohort);
       $(".response").show();
-      console.log(q1, q2, q3, q4, q5, q6);
+      console.log(q1, q2, q3, q4, q5, q6)
       console.log(php,jav,ruby,c);
-      console.log(path(php,jav,ruby,c));
-      clear();
-      console.log(php,jav,ruby,c);
+    console.log(path(php,jav,ruby,c));
 });
 
 var php = 0;
@@ -37,14 +34,10 @@ var q5 = parseInt($("#q5").val())
 var q6 = parseInt($("#q6").val())
 
 
-function clear(){
-delete global.php;
-delete global.jav;
-delete global.ruby;
-delete global.c;
-}
+
 
 var path = function(php,jav,ruby,c){
+  debugger;
   if(php > jav && php > ruby && php > c){
   return "PHP";
   }
@@ -99,24 +92,25 @@ var respond = function(q1, q2, q3, q4, q5, q6)  {
   if (q1 === 2){
     jav += 1}
   if (q1 === 3){
-    ruby += 1}
-  if (q2 === 1){
-    c += 1}
-  if (q2 === 2){
-    jav += 1}
-  if (q2 === 3){
-    php += 1}
-  if(q2 === 4){
-    ruby += 1}
-  if (q3 === 1){
-    jav += 1}
-  if (q4 === 1){
-    php += 1}
-  if (q5 === 1){
-    ruby += 1}
-  if (q6 === 1){
-    c += 1}
-}
+    ruby += 1}{
+        }
+        if (q2 === 1){
+          c += 1}
+        if (q2 === 2){
+          jav += 1}
+        if (q2 === 3){
+          php += 1}
+        if(q2 === 4){
+          ruby += 1}
+          if (q3 === 1){
+            jav += 1}
+              if (q4 === 1){
+                php += 1}
+                if (q5 === 1){
+                ruby += 1}
+                  if (q6 === 1){
+                    c += 1}
+                    }
 
 
 });

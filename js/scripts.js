@@ -18,9 +18,7 @@ $(function(){
       console.log(q1, q2, q3, q4, q5, q6)
       console.log(php,jav,ruby,c);
     console.log(path(php,jav,ruby,c));
-
-
-  });
+});
 
 var php = 0;
 var jav = 0;
@@ -86,18 +84,6 @@ var path = function(php,jav,ruby,c){
       return "PHP, C#, Java, or Ruby"; //all
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 var respond = function(q1, q2, q3, q4, q5, q6)  {
 

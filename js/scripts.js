@@ -12,7 +12,10 @@ $(function(){
     var q6 = parseInt($("#q6").val());
     var q7 = parseInt($("#q7").val());
     respond(q1, q2, q3, q4, q5, q6, q7);
-    console.log(php, jav,ruby, c);
+    var answers= [php,jav,ruby,c]
+
+    console.log(answers);
+
 
 
   });
@@ -21,6 +24,8 @@ var php = 0;
 var jav = 0;
 var ruby = 0;
 var c = 0;
+
+var answers= [php,jav,ruby,c]
 
 var q1 = parseInt($("#q1").val())
 var q2 = parseInt($("#q2").val())
@@ -50,8 +55,22 @@ var respond = function(q1, q2, q3, q4, q5, q6, q7)  {
         if(q2 === 4){
           ruby += 1}
           if (q3 === 1){
+            c += 1}
+          if (q3 === 2){
             jav += 1}
-            if (q4 === 1){
-              jav += 1}
-}
+          if (q3 === 3){
+            php += 1}
+          if (q3 === 4){
+            ruby += 1}
+              if (q4 === 1){
+                jav += 1}
+                if (q5 === 1){
+                php += 1}
+                  if (q6 === 1){
+                    ruby += 1}
+                    if (q7 === 1){
+                      c += 1}
+                    }
+
+
 });

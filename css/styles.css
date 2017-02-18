@@ -24,7 +24,6 @@ font-weight:bold;
 font-size: 100px;
 }
 
-
 .intro{
 color: red;
 font-size: 25px
@@ -33,25 +32,17 @@ font-style: italic;
 text-align: center;
 }
 
-
-
-.reprint{
-  display: none;
-  border: 2px solid brown;
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 130px;
-  color: black;
-}
-
 .form-control{
   width:200px;
   margin: 0 auto;
 }
 
-h1{
+.title{
   text-align: center;
   margin: 30px;
+  text-shadow: 20px 20px 20px;
+  font-size: 75px;
+  font-family: fantasy;
 }
 
 h2{
@@ -64,7 +55,6 @@ p{
   font-size: 15px;
   color: white;
 }
-
 
 #formDiv{
   margin-bottom: 15px;

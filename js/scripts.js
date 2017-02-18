@@ -1,9 +1,9 @@
 
 $(function(){
-  $("form#formInfo").submit(function(){
+  $("#formInfo").submit(function(){
     event.preventDefault();
+    $(".response").fadeOut("slow");
     var name = $("#name").val();
-    $(".name").text(name);
     var q1 = parseInt($("#q1").val());
     var q2 = parseInt($("#q2").val());
     var q3 = parseInt($("#q3").val());
@@ -12,14 +12,14 @@ $(function(){
     var q6 = parseInt($("#q6").val());
     respond(q1, q2, q3, q4, q5, q6);
     var cohort = path(php,jav,ruby,c);
-      $(".name").text(name);
-      $(".path").text(cohort);
-      $(".response").show();
-      console.log(q1, q2, q3, q4, q5, q6);
-      console.log(php,jav,ruby,c);
-      console.log(path(php,jav,ruby,c));
-      clear();
-      console.log(php,jav,ruby,c);
+    $(".name").text(name);
+    $(".path").text(cohort);
+    $(".response").fadeIn("slow");
+    console.log(q1, q2, q3, q4, q5, q6);
+    console.log(php,jav,ruby,c);
+    console.log(path(php,jav,ruby,c));
+    clear();
+    console.log(php,jav,ruby,c);
 });
 
 var php = 0;
